@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- <link href="/assets/css/reset.css" rel="stylesheet"> -->
     <link href="/assets/css/style.css" rel="stylesheet" />
 <body>
 
@@ -21,7 +22,7 @@
 
     <h3>Primeiro, seu prato</h3>
     <div class="container">
-        <div class="produto">
+        <div id="selecionado" class="produto" onclick="selecionaItem()">
             <img src="/assets/images/frango_yin_yang.png" />
             <p>Frango Yin Yang</p>
             <p class="descricao">Um pouco de batata, um pouco de salada</p>
@@ -84,8 +85,14 @@
             <p class="preco"><strong>R$ 6,90</strong></p>
         </div>
     </div>
+
+    <div class="botao">
+        <button type="button" disabled>
+            Selecione os 3 itens <br/>
+            para fechar o pedido
+        </button>      
+    </div>
     
-    
-    
+    <sricpt src="/assets/js/script.js"></sricpt>
 </body>
 </html>
