@@ -1,19 +1,79 @@
-function selecionaItem(item) {
-    
-    // pega div selecionada anteriormente
-    const itemSelecionadoAnteriormente = document.querySelector('.produto .selecionado'); 
-    console.log(itemSelecionadoAnteriormente);
+let pedido1;
 
-    // anter de remover a classe selecionado, verificar se o elementonão é null
-    if (itemSelecionadoAnteriormente !== null) {
-        // remover a classe selecionado desse botao
-        itemSelecionadoAnteriormente.classList.remove('selecionado');
+function selecionaItem1(item) {
+    
+    const itemSelecinadoAnt = document.querySelector('.container1 .selecionado');
+    console.log(itemSelecinadoAnt);
+    
+    if ( itemSelecinadoAnt !== null) {
+    
+        itemSelecinadoAnt.classList.remove('selecionado');
+    } 
+ 
+    item.classList.add('selecionado'); 
+
+    /* pedido1 = document.querySelector(item); */
+
+    pedido1 = itemSelecinadoAnt.innerHTML;
+
+    fecharPedido();
+} 
+
+let pedido2;
+
+function selecionaItem2(item) {
+    
+    const itemSelecinadoAnt = document.querySelector('.container2 .selecionado');
+    
+    if ( itemSelecinadoAnt !== null) {
+    
+        itemSelecinadoAnt.classList.remove('selecionado');
+    } 
+ 
+    item.classList.add('selecionado');
+
+    /* pedido2 = document.querySelector(item);  */
+
+    pedido2 = itemSelecinadoAnt.innerHTML;
+
+    fecharPedido();  
+} 
+
+let pedido3;
+
+function selecionaItem3(item) {
+    
+    const itemSelecinadoAnt = document.querySelector('.container3 .selecionado');
+    
+    if ( itemSelecinadoAnt !== null) {
+    
+        itemSelecinadoAnt.classList.remove('selecionado');
+    } 
+
+    item.classList.add('selecionado');
+    
+    /* pedido3 = document.querySelector(item); */
+
+    pedido3 = itemSelecinadoAnt.innerHTML;
+
+    fecharPedido();  
+} 
+
+function fecharPedido() {
+    
+    if(pedido1 !== undefined) {
+        console.log(pedido1);
+        if(pedido2 !==undefined) {
+            console.log(pedido1);
+            if(pedido3 !== undefined) {
+                console.log(pedido1);
+                /*document.querySelector('.botao .bt').removeAttribute("disabled"); */
+                const botaoFecharPedido = document.querySelector('.bt');
+                botaoFecharPedido.classList.add('active'); 
+                botaoFecharPedido.innerHTML = 'Fechar pedido';
+            }
+        }
     }
-
-
-    // pegar o botão que foi clicado
-    const itemSelecionado = document.querySelector(item);
-    
-    // adicionar a classe selecionado ao botão
-    itemSelecionado.classList.add('selecionado');
 }
+
+

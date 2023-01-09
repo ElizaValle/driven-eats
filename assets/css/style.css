@@ -48,17 +48,36 @@ h3 {
     margin-left: 21px;
     margin-bottom: 17px;
 }
+/* desse jeito nada aplicado funciona, e o botão de check aparece em todos e do lado de fora */
+/* .container1 
+.container2 
+.container3 {
+    display: flex;
+    overflow-x: scroll 
+}  */
 
-.container {
+/* desse jeito funciona, mas o check não aparece no terceiro item de cada linha */
+.container1 {
+    display: flex;
+    overflow-x: scroll
+}
+
+.container2 {
+    display: flex;
+    overflow-x: scroll
+}
+
+.container3 {
     display: flex;
     overflow-x: scroll
 }
 
 .produto {
     background: #fff;
-    margin-left: 21px;
-    /* width: 172px;
-    height: 216px; */
+    margin-left: 14px;
+    margin-right: 14px;
+    width: 172px;
+    height: 216px; 
     border-radius: 9px;
     border: 5px solid #fff;
     cursor: pointer;
@@ -91,11 +110,24 @@ h3 {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    margin-bottom: -13px;
 }
 
 .selecionado {
     border: 5px solid #32B72F;
 }
+
+ion-icon {
+    color: #32B72F;
+   /*  margin-right: 9.38%;
+    margin-top: 6%; */
+    margin-left: -60px;
+    margin-bottom: 5px;
+}
+
+/* .none  {
+    display: none;
+} */
 
 .botao {
     width: 100%;
@@ -103,8 +135,11 @@ h3 {
     margin-top: 16px;
     background: #fff;
     text-align: center;
-    position: sticky;
     bottom: 0;
+    position: sticky; /* obs: positon:sticky fixa na tela normal, mas não fixa no mobile 
+                     position:fixed fixa no mobile mas deixa barra inferior estendida pra direita, por que isso aconntece?
+                     Além disso, deixa as div's referentes a sobremesa encobertas tanto na tela normal como na tela mobile.
+                    Sendo assim, preferi deixar positon:sticky*/
 }
 
 .botao button {
@@ -120,4 +155,8 @@ h3 {
     font-size: 20px;
     line-height: 23px;
     color: #fff;
+}
+
+.active {
+    background-color: #32B72F;
 }
