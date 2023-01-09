@@ -12,9 +12,9 @@ function selecionaItem1(item) {
  
     item.classList.add('selecionado'); 
 
-    /* pedido1 = document.querySelector(item); */
+    itemSelecinadoAnt.classList.add('active');
 
-    pedido1 = itemSelecinadoAnt.innerHTML;
+    pedido1 = itemSelecinadoAnt.innerHTML; 
 
     fecharPedido();
 } 
@@ -32,7 +32,7 @@ function selecionaItem2(item) {
  
     item.classList.add('selecionado');
 
-    /* pedido2 = document.querySelector(item);  */
+    itemSelecinadoAnt.classList.add('active');
 
     pedido2 = itemSelecinadoAnt.innerHTML;
 
@@ -51,8 +51,8 @@ function selecionaItem3(item) {
     } 
 
     item.classList.add('selecionado');
-    
-    /* pedido3 = document.querySelector(item); */
+
+    itemSelecinadoAnt.classList.add('active');
 
     pedido3 = itemSelecinadoAnt.innerHTML;
 
@@ -60,13 +60,10 @@ function selecionaItem3(item) {
 } 
 
 function fecharPedido() {
-    
+
     if(pedido1 !== undefined) {
-        console.log(pedido1);
         if(pedido2 !==undefined) {
-            console.log(pedido1);
             if(pedido3 !== undefined) {
-                console.log(pedido1);
                 /*document.querySelector('.botao .bt').removeAttribute("disabled"); */
                 const botaoFecharPedido = document.querySelector('.bt');
                 botaoFecharPedido.classList.add('active'); 
