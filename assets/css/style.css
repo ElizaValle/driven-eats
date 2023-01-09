@@ -136,10 +136,9 @@ ion-icon {
     background: #fff;
     text-align: center;
     bottom: 0;
-    position: sticky; /* obs: positon:sticky fixa na tela normal, mas não fixa no mobile 
+    position: fixed; /* obs: positon:sticky fixa na tela normal, mas não fixa no mobile 
                      position:fixed fixa no mobile mas deixa barra inferior estendida pra direita, por que isso aconntece?
-                     Além disso, deixa as div's referentes a sobremesa encobertas tanto na tela normal como na tela mobile.
-                    Sendo assim, preferi deixar positon:sticky*/
+                     Além disso, deixa as div's referentes a sobremesa encobertas tanto na tela normal como na tela mobile*/
 }
 
 .botao button {

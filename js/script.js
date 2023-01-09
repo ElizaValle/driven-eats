@@ -12,7 +12,7 @@ function selecionaItem1(item) {
  
     item.classList.add('selecionado'); 
 
-    itemSelecinadoAnt.classList.add('active');
+    item.document.querySelector('container1').innerHTML;
 
     pedido1 = itemSelecinadoAnt.innerHTML; 
 
@@ -32,7 +32,7 @@ function selecionaItem2(item) {
  
     item.classList.add('selecionado');
 
-    itemSelecinadoAnt.classList.add('active');
+    item.document.querySelector('container2').innerHTML;
 
     pedido2 = itemSelecinadoAnt.innerHTML;
 
@@ -52,7 +52,7 @@ function selecionaItem3(item) {
 
     item.classList.add('selecionado');
 
-    itemSelecinadoAnt.classList.add('active');
+    item.document.querySelector('container3').innerHTML;
 
     pedido3 = itemSelecinadoAnt.innerHTML;
 
